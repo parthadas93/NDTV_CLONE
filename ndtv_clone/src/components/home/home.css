@@ -1,0 +1,11 @@
+.topNews{
+    height: 1000px;
+    overflow: hidden;
+    background-color: white;
+    width: 400px;
+   
+   
+}
+.topNews Title{
+    padding-left: 25px;
+}

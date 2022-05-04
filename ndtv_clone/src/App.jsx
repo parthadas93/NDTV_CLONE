@@ -1,28 +1,16 @@
-import { useDebugValue, useState } from 'react'
+
 import logo from './logo.svg'
 import './App.css'
-import axios from "axios"
-import {useEffect} from "react"
 
+import { Home } from './components/home/Home'
 function App() {
-  const [count, setCount] = useState([])
+  return <>
+    <div className='App'>
 
-  useEffect(()=>{
-  axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=0d5c533").then((res)=>{setCount(res.data.articles)})
-  }, [])
-  
-  console.log(count)
-  return (
-    <div className="App">
-
-      {count.map((e) => {
-        return (
-          <img src ={`${e.urlToImage}`}  ></img>
-        )
-       })}
-     
+  <Home></Home>
     </div>
-  )
+  </>
+
 }
 
 export default App

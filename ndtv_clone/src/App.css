@@ -1,9 +1,14 @@
 .App {
   text-align: center;
-  background-color: rgb(234,234,234);
+  background-color:rgb(234,234,234);
+}
+.topNews{
+  text-align: left;
+  margin-left: 20px;
+ 
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -40,4 +45,4 @@
 
 button {
   font-size: calc(10px + 2vmin);
-}
+} */
