@@ -1,0 +1,17 @@
+.single_main{
+    background-color: white;
+    
+    height: 300px;
+    /* border: 1px solid red; */
+    margin-top: 25px;
+   
+
+}
+.single_main img{
+    width: 250px;
+    height: 230px;
+    
+}
+b{
+    padding-left: 15px;
+}
