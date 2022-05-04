@@ -12,6 +12,7 @@ const { Meta } = Card;
 
 import  { useRef} from 'react'
 import { Videos } from "../videos/Video";
+import { ImageDiv } from "../imageDiv/ImageDiv";
 
 
 const { Title } = Typography;
@@ -93,7 +94,11 @@ export const Home = () => {
 
           </div>
 
+          <div className="fifth">
+
           <div className="forth">
+
+            <div>
 
             {data.map((e) => {
               return (
@@ -101,8 +106,16 @@ export const Home = () => {
                 des={e.headline}></SmallCards>
               )
             })}
+            </div>
 
           </div>
+          <div>
+
+            <ImageDiv image= "./images/4.webp" des= "Army's New Vests Order After Terrorists Use Armour-Piercing Bullets"></ImageDiv>
+          </div>
+          </div>
+
+           
 
          
 

@@ -65,9 +65,18 @@ height: 75%;
 }
 
 .forth{
-    height: 370px;
+    height: 390px;
     width: 60%;
     overflow: hidden;
     background-color: white;
     margin-top: 15px;
+
+   
+    
+ 
+    
+}
+.fifth{
+   display: flex;
+    gap: 35px; 
 }
