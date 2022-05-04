@@ -23,7 +23,7 @@ width: 99%;
 height: 75%;
 }
 .top_story{
-    height: 1000px;
+    height: 1060px;
     overflow: hidden;
     background-color: white;
     width: 400px;
@@ -53,8 +53,21 @@ height: 75%;
 
 .second{
     display: flex;
-    gap: 25px;
+    gap: 35px;
     /* border: 1px solid red; */
     overflow: hidden;
 
+}
+
+.third{
+    display: flex;
+    gap: 35px; 
+}
+
+.forth{
+    height: 370px;
+    width: 60%;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 15px;
 }

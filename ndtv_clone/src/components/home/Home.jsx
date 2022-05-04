@@ -7,11 +7,24 @@ import { Card } from "antd";
 import { SingleCard } from "../singleCard/SingleCard";
 const { Meta } = Card;
 
+
+
+
+import  { useRef} from 'react'
+import { Videos } from "../videos/Video";
+
+
 const { Title } = Typography;
 
 export const Home = () => {
   const [data, setData] = useState([]);
   const [top, setTop] = useState([])
+  const vidRef = useRef(null);
+
+  const handlePlayVideo = () => {
+    this.vidRef.play();
+    vidButtonRef.current.classList.add('is-playing');
+  }
 
   useEffect(() => {
     axios.get("https://ndtvnews-api.herokuapp.com/general").then((res) => {
@@ -38,6 +51,7 @@ export const Home = () => {
             </Title>
           </div>
           <div className="top_story">
+            <Title level={4}>Top Stories</Title>
             {data.map((e) => {
               return (
                 <SmallCards
@@ -71,9 +85,33 @@ export const Home = () => {
 
           </div>
 
+          <div className="third">
+
+            <Videos url="./video/v1.mp4"></Videos>
+            <SingleCard image="./images/3.webp" des= "RBI Hikes Rates In A Surprise Move, First Increase In 4 Years: 10 Points"></SingleCard>
+
+
+          </div>
+
+          <div className="forth">
+
+            {data.map((e) => {
+              return (
+                <SmallCards   image={e.image_url}
+                des={e.headline}></SmallCards>
+              )
+            })}
+
+          </div>
+
+         
 
         </div>
-        <div className="right"></div>
+        <div className="right">
+        
+          
+
+        </div>
       </div>
     </>
   );
