@@ -1,6 +1,6 @@
 import ReactPlayer from "react-player";
 import "./video.css";
-export const Videos = ({ url }) => {
+export const Videos = ({ url, des }) => {
   return (
     <div className="video_div">
       <ReactPlayer
@@ -14,7 +14,7 @@ export const Videos = ({ url }) => {
         preLoad="auto"
         loop
       />
-      <b>P Chidambaram Heckled After Defending Bengal Government Action In Court</b>
+      <b>{des}</b>
     </div>
   );
 };

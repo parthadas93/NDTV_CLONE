@@ -10,9 +10,13 @@
 }
 .des{
     position: absolute; 
-    top: 200px; 
+    top: 150px; 
     left: 0; 
     width: 100%;
     color: aliceblue;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  
 }

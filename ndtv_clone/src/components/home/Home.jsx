@@ -21,6 +21,7 @@ export const Home = () => {
   const [data, setData] = useState([]);
   const [top, setTop] = useState([])
   const vidRef = useRef(null);
+  const [bit, setBit]= useState([])
 
   const handlePlayVideo = () => {
     this.vidRef.play();
@@ -32,10 +33,15 @@ export const Home = () => {
       setData(res.data.news[0].articles);
     });
   }, []);
+  console.log(data)
 
   useEffect(() => {
     axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=0d5c533e390b465b871030f8f9e94c34").then((res)=>{setTop(res.data.articles)})
-},[])
+  }, [])
+  
+  useEffect(() => {
+    axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=0d5c533e390b465b871030f8f9e94c34").then((res)=>{setBit(res.data.articles)})
+  },[])
 
 //  console.log(top)
   return (
@@ -115,16 +121,54 @@ export const Home = () => {
           </div>
           </div>
 
-           
-
+          <div className="six">
+            <ImageDiv image="./images/n.webp" des="Man Discovers He Is Famous On Google Maps After Neighbours Visit Him" ></ImageDiv>
+            <ImageDiv image= "./images/new.webp" des="Rhea Chakraborty, Rakul Preet-Jackky Bhagnani At Huma's Eid Party"></ImageDiv>
+            <ImageDiv image="./images/s.webp" des="Jaffer's Tweet On Girl's Proposal During RCB vs CSK Game Wins Internet"></ImageDiv>
          
 
-        </div>
-        <div className="right">
-        
-          
+          </div>
+
+           
+
+     
 
         </div>
+
+        
+
+
+        <div className="right">
+        
+          <div className="right_main">
+          {bit.map((e) => {
+            return (
+                <SmallCards image={e.urlToImage} des={e.title}></SmallCards>
+
+
+
+            )
+          })}
+              </div>
+
+        </div>
+      </div>
+      <div className="seven">
+        
+        <SmallCards image="./images/5.webp"  des ="Opinion: India's Heatwaves Are Testing The Limits Of Human Survival"></SmallCards>
+        <SmallCards image="./images/6.webp" des ="Opinion: Time For Rahul Gandhi To Do A Vajpayee"  ></SmallCards>
+        <SmallCards image="./images/7.webp" des="Opinion: This Maharashtra Day, We Stand At A Crossroads" ></SmallCards>
+        
+      </div> 
+      
+      <div className="eight">
+        <ImageDiv image="./images/8.webp" des ="Sunny days are incomplete without Saniya Malhotra in a pretty summer dress"></ImageDiv>
+        <ImageDiv image="./images/9.jpg" des="Alia and Ranvir will be the first guest for Coffee with Karan 7"></ImageDiv>
+        <ImageDiv image="./images/10.webp" des="Sara In A Multi-Coloured Sequin Dress Has Left Us Absolute Speechless"></ImageDiv>
+           <Videos url="./video/v3.mp4" des=""></Videos>
+            <Videos url="./video/v2.mp4" des="Watch: Can't bat with you. Cheeky Maxwell tells Kohli on run out"></Videos>
+
+
       </div>
     </>
   );

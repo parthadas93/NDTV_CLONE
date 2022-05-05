@@ -6,7 +6,8 @@ export const SmallCards = ({image, des}) => {
         <div className="main">
         
         <img src={image}></img>
-        <b>{ des}</b>
+            <div className="small_des">{des}</div>
+            <hr />
         </div>
     
     </>
