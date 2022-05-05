@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState ,useEffect } from "react";
+import{Addata}from "../../data/adddata"
 
 import {Smallcart, Trending}  from "./smallcart";
 import "./Ofbeat.css"
@@ -39,6 +40,21 @@ export const Offbeat =()=>{
                     return <Smallcart image={e.image_url} headline={e.headline} url={e.url} description={e.description} posted_date={e.posted_date}></Smallcart>
                 })
                 }
+            </div>
+            <div className="rightmost">
+                {/* <h4>letest things</h4> */}
+                <div>
+                    {
+                        Addata.map((e)=>
+                            <div>
+                                <img style={{width:"200px"}} src={e.img} alt="" />
+                                <p>{e.text}</p>
+                            </div>
+                        )
+                    }
+                 
+                </div>
+
             </div>
 
             
