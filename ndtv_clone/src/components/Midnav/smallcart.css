@@ -1,7 +1,7 @@
 .mainsm{
     display: flex;
-    width: 60%;
-    margin: 25px auto;
+    /* width: 60%; */
+    margin: 7px;
     /* border: 1px solid red; */
     /* margin: 15px; */
     padding:  15px ;
@@ -9,7 +9,10 @@
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .mainsm img{
-    width: 20%;border-radius: 4px;
+    width: 150px;
+    border-radius: 4px;
+    height: 120px;
+    
 }
 
 .mainsm div{
@@ -17,4 +20,8 @@ margin-left: 30px;
 }
 a{
     text-decoration: none;
+    color: black;
+}
+h3{
+    margin: 0;
 }
