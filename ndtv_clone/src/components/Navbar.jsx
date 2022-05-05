@@ -1,7 +1,16 @@
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux"
 import {Link} from "react-router-dom"
+import { toggleshow } from "../redux/Action";
 import "./Navbar.css"
 
+
 export const Nav=()=>{
+
+    const dispatch=useDispatch();
+
+   
+    const hiden=useSelector(store=>store.isshow);
 
     const Navbar=[
         {title:"LIVE TV",to:"/liveTv"},
@@ -31,7 +40,7 @@ export const Nav=()=>{
                         </Link>
                     })
                 }
-            <button style={{background:"rgb(40,44,52)" ,border:"none",color:"white"}}>{'...'}</button>
+            <button style={{background:"rgb(62,62,62)" ,border:"none",color:"white"}} onClick={()=>dispatch(toggleshow(!hiden))}>{'...'}</button>
             
         </div>
     )

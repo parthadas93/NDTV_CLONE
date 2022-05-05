@@ -39,17 +39,22 @@ import { Job } from './components/bellowComponent/Jobs'
 import { Weather } from './components/bellowComponent/Weather'
 import { TvSchedule } from './components/bellowComponent/TVschedule'
 import { Trains } from './components/bellowComponent/Trains'
+import { useDispatch, useSelector } from "react-redux"
 function App() {
-  
 
+
+  const hiden=useSelector(store=>store.isshow);
+  
+ console.log(hiden)
   return (
     <div className="App">
       <div className='navdiv'>
         <div className='midnav'>
           <UpNav></UpNav>
           <br />
-           <Nav></Nav> 
-           <Bellownav></Bellownav>
+        <Nav></Nav> 
+        {hiden ? <Bellownav></Bellownav>: null}
+           
         </div>
        
        

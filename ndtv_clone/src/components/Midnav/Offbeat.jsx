@@ -17,11 +17,19 @@ export const Offbeat =()=>{
         axios.get("https://ndtvnews-api.herokuapp.com/general?category=values(entertainment,india)").then((res)=>{setTrend(res.data.news[0].articles)})
         }, [])
     
-    console.log(count)
-    console.log(trend)
+    // console.log(count)
+    // console.log(trend)
     return(
         <>
-        <div><h1 style={{textAlign:"left" ,marginLeft:"200px"}}>Offbeat</h1>
+        <div>
+            <div className="firstadd">
+                <div><h1>Most Trusted Coding Platform</h1>
+                    <h2>Learn data Structure and algoritham</h2>
+                <p>One Stop for all Coding Lovers. <br></br>Choose & Start today from our wide range of courses.</p></div>
+                <img src="https://tpc.googlesyndication.com/simgad/2580929734641262972/downsize_200k_v1?sqp=4sqPyQSWAUKTAQgAEhQNzczMPhUAAABAHQAAAAAlAAAAABgAIgoNAACAPxUAAIA_Kk8IWhABHQAAtEIgASgBMAY4A0CAwtcvSABQAFgAYFpwAngAgAEAiAEAkAEAnQEAAIA_oAEAqAEAsAGAreIEuAH___________8BxQEtsp0-MhoI2gMQ-AEYASABLQAAAD8w2gM4-AFFAACAPw&rs=AOga4qkgoVdekZH0uqBWX-guqQJzlR1p8w" alt="" />
+            </div>
+
+            <h1 style={{textAlign:"left" ,marginLeft:"300px",fontSize:"45px"}}>Offbeat</h1>
           <div className="containerdiv">
 
           <div className="left">

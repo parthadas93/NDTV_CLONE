@@ -29,5 +29,11 @@ export const Addata=[
         text:'Heart disease has haunted her for 15 years. Help me fix the damage '
 
     },
+    {
+        id:5,
+        img:"https://c.ndtvimg.com/2022-04/ue551mg_craft-coffee_625x300_28_April_22.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350",
+        text:'Coffee Culture In Kolkata: 5 Best Cafes In Town To Unwind Yourself'
+
+    },
     
 ]

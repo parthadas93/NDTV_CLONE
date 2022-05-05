@@ -1,6 +1,6 @@
 .containerdiv{
     display: flex;
-    width: 85%;
+    width: 75%;
     margin: auto;
 }
 .left{
@@ -29,4 +29,11 @@
 }
 .rightmost{
     width:18% ;
+}
+.firstadd{
+    display: flex;
+    border: 1px solid black;
+    
+    width: fit-content;
+    margin: 10px auto;
 }
