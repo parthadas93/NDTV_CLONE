@@ -16,3 +16,9 @@
     text-decoration:none;
     color: rgb(159, 160, 160)
 }
+
+.icon{
+    height: 25px;
+    width: 25px;
+    margin: 0 8px;
+}
