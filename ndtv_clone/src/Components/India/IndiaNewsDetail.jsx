@@ -13,7 +13,7 @@ useEffect(() => {
     return(
         <div className="news1">
         {items.map((e,i)=>{
-          console.log("Done")
+         
           return (
               <div className="indiaContainer" key={i}>
                

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export const Indianews = () =>{
     // let navigate = useNavigate();
     const [newsData, setnewsData] = useState([]);
-    console.log(newsData);
+    // console.log(newsData);
     
     const fetchData = async () => {
       const news = await axios.get(

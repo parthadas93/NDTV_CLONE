@@ -1,27 +1,29 @@
-.TrendIndContainer{
+.IndRightContainer{
     width: 90%;
-    height: 100px;
+    height: 200px;
     margin-left:0px;
-    display: flex;
+    display: block;
     margin-top: 10px;
-    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    cursor: pointer;
     overflow: hidden;
 }
-/* .TrendIndContainer:hover{
+/* .IndRightContainer:hover{
     padding:10px;
     cursor: pointer;
 } */
-.TrendIndContainer>Img{
+.IndRightContainer>Img{
     padding: 10px;
-    width:25%;
-    height: 65px;
+    width:100%;
+    
     /* width:max-content;
     height: 75px; */
     border-radius:5%
 }
-.TrendText{
-    font-size:14px;
+.IndRightText{
+    margin-top:0px;
+    font-size:12px;
+    font-weight:700;
 }
 h3{
     background-color:rgb(211, 200, 200);

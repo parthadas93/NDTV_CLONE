@@ -15,7 +15,7 @@ function App() {
   // console.log(count)
   return (
     <div className="App">
-       <NewsDisplay />
+      
       {/* {count.map((e) => {
         return (
           <img src ={`${e.urlToImage}`}  ></img>

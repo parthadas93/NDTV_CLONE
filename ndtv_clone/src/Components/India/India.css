@@ -19,8 +19,10 @@
 .NewsDisplay2{
     width:25%;
 }
-/* .news1{
-    width: 70%;
-    border:1px solid red;
-    
-} */
+.mamaEarth{
+   margin: auto;
+    width: 60%;
+}
+.IndiaHeadDisplay{
+    text-align:left;
+}
