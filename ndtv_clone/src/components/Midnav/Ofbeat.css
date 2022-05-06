@@ -1,0 +1,39 @@
+.containerdiv{
+    display: flex;
+    width: 75%;
+    margin: auto;
+}
+.left{
+    width: 20%;
+    height: 3000px;
+    margin: 0;
+    overflow: hidden;
+}
+.left img{
+    height: 50px;
+    width: 70px;
+}
+.left h2{
+    font-size: 15px;
+    margin: 0;
+}
+.right{
+    width: 60%;
+}
+.heading{
+    background-color: rgb(247, 243, 243);
+    height: 25px;
+    width: 97%;
+    margin: auto;
+    border-radius: 5px;
+}
+.rightmost{
+    width:18% ;
+}
+.firstadd{
+    display: flex;
+    border: 1px solid black;
+    
+    width: fit-content;
+    margin: 10px auto;
+}

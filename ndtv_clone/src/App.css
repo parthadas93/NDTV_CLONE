@@ -1,11 +1,15 @@
 .App {
   text-align: center;
-  background-color: rgb(234,234,234);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.navdiv{
+  background-color:rgb(62,62,62);
+  color: white;
+  margin: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,6 +31,9 @@
 
 .App-link {
   color: #61dafb;
+}
+.midnav{
+  display: inline;
 }
 
 @keyframes App-logo-spin {
