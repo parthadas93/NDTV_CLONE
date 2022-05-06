@@ -8,7 +8,7 @@ import { LiveTV } from './components/Midnav/LiveTv';
 import {Cities} from "./components/Midnav/Cities";
 import {Covid} from "./components/Midnav/Covid";
 import {India} from "./components/India/India";
-import {Letest} from "./components/Midnav/Latest";
+import {Latest} from "./components/Latest/latest";
 import {Offbeat} from "./components/Midnav/Offbeat";
 import {Opinion} from "./components/Midnav/Opinion";
 import {Photos} from "./components/Midnav/Photos";
@@ -63,7 +63,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/liveTv" element={<LiveTV/>}></Route>
-          <Route path="/latest" element={<Letest/>}></Route>
+          <Route path="/latest" element={<Latest/>}></Route>
           <Route path="/covid" element={<Covid/>}></Route>
           <Route path="/india" element={<India/>}></Route>
           <Route path="/opinion" element={<Opinion/>}></Route>

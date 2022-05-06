@@ -30,7 +30,7 @@ getData()
   
   <div className='curr-main'>
    <div className='curr-img'>
-         <img width="100%" height="100%" src={news.urlToImage} />
+         <img  src={news.urlToImage} />
    </div>
 
    <div className='text-div'> 

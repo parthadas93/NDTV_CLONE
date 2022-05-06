@@ -13,7 +13,7 @@ export const Nav=()=>{
     const hiden=useSelector(store=>store.isshow);
 
     const Navbar=[
-        {title:"LIVE TV",to:"/liveTv"},
+        {title:"LIVE TV",to:"#"},
         {title:"LATEST",to:"/latest"},
         {title:"COVID",to:"/covid"},
         {title:"INDIA",to:"/india"},

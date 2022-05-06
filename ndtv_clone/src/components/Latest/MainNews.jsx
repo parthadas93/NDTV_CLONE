@@ -30,8 +30,9 @@ export const MainNews=()=> {
 
    <div className='news-img'>
        <a href={news.url}>
-       <div className='img'>
-           <img width="100%" height="100%" src={news.urlToImage} />
+       <div className='imgmain'>
+           <img 
+            src={news.urlToImage} />
         </div>
        </a>
    </div>

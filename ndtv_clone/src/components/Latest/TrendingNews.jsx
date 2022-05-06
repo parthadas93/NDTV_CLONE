@@ -29,7 +29,7 @@ export const TrendingNews=()=> {
     
     <div className='curr-main-trend'>
      <div className='curr-img-trend'>
-           <img width="100%" height="100%" src={news.urlToImage} />
+           <img  src={news.urlToImage} />
      </div>
   
      <div className='text-div-trend'> 
