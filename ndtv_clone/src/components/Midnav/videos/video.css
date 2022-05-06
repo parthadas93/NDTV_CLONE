@@ -1,0 +1,10 @@
+.video_div{
+    background-color: white;
+    /* border: 1px solid red; */
+    width:260px;
+    height:320px;
+    margin-top: 15px;
+    padding-top: 0%;
+    text-align: left;
+    
+}

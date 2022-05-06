@@ -65,7 +65,7 @@ export const Cities = () => {
 
   return (
     <div id="addcont">
-      <img
+      <img 
         id="add"
         src="https://www.wordstream.com/wp-content/uploads/2021/07/banner-ads-examples-ncino.jpg"
         alt=""

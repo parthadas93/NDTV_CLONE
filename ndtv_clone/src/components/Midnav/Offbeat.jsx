@@ -26,7 +26,8 @@ export const Offbeat =()=>{
                 <div><h1>Most Trusted Coding Platform</h1>
                     <h2>Learn data Structure and algoritham</h2>
                 <p>One Stop for all Coding Lovers. <br></br>Choose & Start today from our wide range of courses.</p></div>
-                <img src="https://tpc.googlesyndication.com/simgad/2580929734641262972/downsize_200k_v1?sqp=4sqPyQSWAUKTAQgAEhQNzczMPhUAAABAHQAAAAAlAAAAABgAIgoNAACAPxUAAIA_Kk8IWhABHQAAtEIgASgBMAY4A0CAwtcvSABQAFgAYFpwAngAgAEAiAEAkAEAnQEAAIA_oAEAqAEAsAGAreIEuAH___________8BxQEtsp0-MhoI2gMQ-AEYASABLQAAAD8w2gM4-AFFAACAPw&rs=AOga4qkgoVdekZH0uqBWX-guqQJzlR1p8w" alt="" />
+                <div className="adddivof"><img src="https://tpc.googlesyndication.com/simgad/2580929734641262972/downsize_200k_v1?sqp=4sqPyQSWAUKTAQgAEhQNzczMPhUAAABAHQAAAAAlAAAAABgAIgoNAACAPxUAAIA_Kk8IWhABHQAAtEIgASgBMAY4A0CAwtcvSABQAFgAYFpwAngAgAEAiAEAkAEAnQEAAIA_oAEAqAEAsAGAreIEuAH___________8BxQEtsp0-MhoI2gMQ-AEYASABLQAAAD8w2gM4-AFFAACAPw&rs=AOga4qkgoVdekZH0uqBWX-guqQJzlR1p8w" alt="" /></div>
+                
             </div>
 
             <h1 style={{textAlign:"left" ,marginLeft:"300px",fontSize:"45px"}}>Offbeat</h1>
@@ -55,7 +56,8 @@ export const Offbeat =()=>{
                     {
                         Addata.map((e)=>
                             <div>
-                                <img style={{width:"200px"}} src={e.img} alt="" />
+
+                                <img style={{width:"200px",height:"200px"}} src={e.img} alt="" />
                                 <p>{e.text}</p>
                             </div>
                         )

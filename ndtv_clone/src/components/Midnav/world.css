@@ -3,7 +3,7 @@
   margin: auto;
   display: flex;
 
-  width: 90%;
+  width: 70%;
  
 }
 #leftside {
@@ -107,6 +107,8 @@
 }
 #add{
     margin:50px;
+    width: 70%;
+    height: 250px;
 }
 #addcount{
     border:1px solid green;

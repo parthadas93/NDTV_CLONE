@@ -52,8 +52,8 @@ export const Nav=()=>{
     ]
     
     return(
-        <div className="main">
-            <Link to={"/"}><img style={{color:"white"}} src="https://drop.ndtv.com/homepage/images/ndtvlogo23march.png" alt="" /></Link>
+        <div className="mainvav">
+            <Link to={"/"}><img style={{color:"white",height:"20px"}} src="https://drop.ndtv.com/homepage/images/ndtvlogo23march.png" alt="" /></Link>
            
 
                 {

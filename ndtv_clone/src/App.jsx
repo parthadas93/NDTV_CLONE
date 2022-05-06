@@ -3,7 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 import {Nav} from "./components/Navbar"
 import {Route,Routes}from "react-router-dom"
-import { Home } from './components/Midnav/Home';
+import { Home } from './components/Midnav/home/Home';
 import { LiveTV } from './components/Midnav/LiveTv';
 import {Cities} from "./components/Midnav/Cities";
 import {Covid} from "./components/Midnav/Covid";

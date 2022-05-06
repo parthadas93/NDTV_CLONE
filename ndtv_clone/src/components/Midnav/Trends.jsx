@@ -24,7 +24,7 @@ export const Trends =()=>{
         <div>
             <div className="firstadd">
                 <div></div>
-                <img src="https://tpc.googlesyndication.com/daca_images/simgad/7204193796666812968" alt="" />
+                <img style={{width:"100%"}} src="https://tpc.googlesyndication.com/daca_images/simgad/7204193796666812968" alt="" />
             </div>
 
             <h1 style={{textAlign:"left" ,marginLeft:"300px",fontSize:"45px"}}>Trending</h1>
@@ -53,7 +53,7 @@ export const Trends =()=>{
                     {
                         Addata.map((e,i)=>
                             <div key={i}>
-                                <img style={{width:"200px"}} src={e.img} alt="" />
+                                <img style={{width:"200px" , height:"200px"}} src={e.img} alt="" />
                                 <p>{e.text}</p>
                             </div>
                         )

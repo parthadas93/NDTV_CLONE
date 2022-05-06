@@ -1,0 +1,125 @@
+
+.main_div{
+    display: flex;
+    gap: 25px;
+    padding: 45px;
+}
+.leftkk{
+    width: 400px;
+    /* border: 1px solid red; */
+}
+.big_story{
+  /* margin-top: 25px;  */
+ width: 100%;
+    text-align: left;
+  margin-bottom: 25px;
+    
+    overflow: hidden;
+    
+    background-color: white;
+}
+.big_story img{
+width: 99%;
+height: 75%;
+}
+.top_story{
+    height: 1400px;
+    overflow: hidden;
+    background-color: white;
+    width: 400px;
+    /* border: 1px solid red; */
+   
+   
+}
+.topNews Title{
+    padding-left: 25px;
+}
+
+
+/* middle div */
+.middle{
+    width: 45%;
+}
+
+.first{
+    height: 430px;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+.first img{
+    width: 99%;
+    height: 75%;
+}
+
+.second{
+    display: flex;
+    gap: 35px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+
+}
+
+.third{
+    display: flex;
+    gap: 35px; 
+}
+
+.forth{
+    height: 390px;
+    width: 60%;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 15px;
+
+   
+    
+ 
+    
+}
+.fifth{
+   display: flex;
+    gap: 35px; 
+}
+
+.six{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.seven{
+    display: flex;
+    /* justify-content: space-around; */
+    /* gap: 10px; */
+    padding: 10px;
+    background-color: white;
+    height: 120px;
+    width: 85%;
+    /* border: 1px solid red; */
+    margin-left: 25px;
+}
+.eight{
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.right_main{
+    background-color: white;
+    height: 550px;
+    width: 380px;
+    overflow: scroll;
+    margin-right: 30px;
+    font-size: 14px;
+}
+.trend{
+    font-size: 25px;
+    background-color: white;
+}
+.nine{
+    display: flex;
+    gap: 20px; 
+    overflow: hidden;
+}

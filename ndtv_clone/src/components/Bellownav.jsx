@@ -16,7 +16,7 @@ export const Bellownav=()=>{
     ]
     
     return(
-        <div className="main">
+        <div className="mainvav">
                {
                     Navbar.map((e,i)=>{
                        return <Link style={{
