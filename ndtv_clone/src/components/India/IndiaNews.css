@@ -1,0 +1,61 @@
+/* .NewsDisplay{
+    display:flex;
+    border:1px solid red;
+    justify-content: space-evenly;
+} */
+
+.indiaContainer{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width:100%;
+    height:150px;
+    display:flex;
+    margin: auto;
+    margin-top:25px;
+    padding:10px;
+    /* border: 1px solid green; */
+}
+.indiaContainer:hover{
+   /* cursor: pointer; */
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+.indiaContainer > Img{
+    /* border: 1px solid red; */
+    width:max-content;
+    height: 100px;
+    border-radius:5%
+}
+.IndiaHeadline{
+    text-align: left;
+    margin-left:5px;
+    /* border:1px solid gray; */
+    font-size:12px;
+    /* line-height:0.5em; */
+    padding:0px;
+    
+}
+.Indhead{
+    font-size:20px;
+    margin:-5px 5px;
+    
+}
+.IndDes{
+    font-size:17px;
+    margin:-5px 5px;
+}
+/* .indiaImg{
+    width: 45%;
+    height:85px;
+} */
+
+/* .news1{
+    width: 70%;
+    
+}
+.NewsDisplay1{
+    width: 15%;
+}
+
+.NewsDisplay2{
+    width: 15%;
+} */
