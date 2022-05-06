@@ -140,6 +140,7 @@ export const Home = () => {
 
         <div className="right">
         
+          <h4 className="trend">Treanding News</h4>
           <div className="right_main">
           {bit.map((e) => {
             return (
@@ -161,12 +162,27 @@ export const Home = () => {
         
       </div> 
       
+       
       <div className="eight">
         <ImageDiv image="./images/8.webp" des ="Sunny days are incomplete without Saniya Malhotra in a pretty summer dress"></ImageDiv>
         <ImageDiv image="./images/9.jpg" des="Alia and Ranvir will be the first guest for Coffee with Karan 7"></ImageDiv>
         <ImageDiv image="./images/10.webp" des="Sara In A Multi-Coloured Sequin Dress Has Left Us Absolute Speechless"></ImageDiv>
            <Videos url="./video/v3.mp4" des=""></Videos>
             <Videos url="./video/v2.mp4" des="Watch: Can't bat with you. Cheeky Maxwell tells Kohli on run out"></Videos>
+
+
+      </div>
+
+      <div className="nine">
+
+   
+        {bit.map((e) => {
+          return (
+
+              <SingleCard  image={e.urlToImage} des={e.title}></SingleCard>
+            )
+          })}
+          
 
 
       </div>
