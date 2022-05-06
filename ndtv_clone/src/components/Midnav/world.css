@@ -1,0 +1,119 @@
+#worldcontainer {
+  /* border:1px solid rgb(0, 110, 255); */
+  margin: auto;
+  display: flex;
+
+  width: 90%;
+ 
+}
+#leftside {
+  /* border:1px solid green; */
+  width: 20%;
+}
+#center {
+  width: 60%;
+  padding-top: 5%;
+  /* border:1px solid gray; */
+}
+#rightside {
+  /* border:1px solid green; */
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+}
+#worldbox {
+  display: flex;
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.05) 0px 0px 0px 1px,
+    rgb(222, 223, 224) 0px 0px 0px 1px inset;
+  margin-top: 3%;
+  padding: 20px;
+  gap: 10px;
+  cursor: pointer;
+}
+#worldbox:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#worldimg {
+  width: 20%;
+  border-radius: 5px;
+  height: 40%;
+}
+#headline {
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  line-height: 28px;
+  text-decoration: none solid rgb(46, 46, 46);
+  text-align: left;
+  word-spacing: 0px;
+  margin: 0px;
+}
+#description {
+  text-align: left;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 19.6px;
+  text-decoration: none solid rgb(102, 102, 102);
+  word-spacing: 0px;
+}
+#time {
+  font-size: 12px;
+  font-family: Roboto, sans-serif;
+  line-height: 18px;
+  text-decoration: none solid rgb(46, 46, 46);
+  text-align: left;
+  word-spacing: 0px;
+  line-height: 3px;
+}
+#box {
+  /* font-size: 18px; */
+  font-family: Roboto, sans-serif;
+  /* line-height: 29px; */
+  text-decoration: none solid rgb(46, 46, 46);
+  text-align: left;
+  word-spacing: 0px;
+  display: block;
+  margin: 0px;
+}
+#rightimg {
+  width: 100%;
+  margin-top:10px;
+}
+#leftside > h3 {
+  background-color: rgb(245, 243, 243);
+  width: 75%;
+  margin: auto;
+}
+#trending {
+  display: flex;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+#trendingimg {
+  width: 60px;
+  border-radius: 5px;
+  height: 60px;
+  margin-right: 10px;
+  margin-top:15px;
+}
+#trendingcontainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 85%;
+  font-size: small;
+  text-align: justify;
+  margin: auto;
+  gap: 20px;
+}
+#add{
+    margin:50px;
+}
+#addcount{
+    border:1px solid green;
+}
+#right{
+width:100%;
+text-align:left;
+cursor: pointer;
+text-decoration: none solid #8c6139;
+}
