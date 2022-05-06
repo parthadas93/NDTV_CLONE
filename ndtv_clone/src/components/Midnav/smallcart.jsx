@@ -16,7 +16,7 @@ export const Smallcart =({image,headline,url,description,posted_date})=>{
     </>
 };
 
-export const Trending =({image,headline})=>{
+export const Trending =({image,headline,date})=>{
 
 
     return <>
@@ -24,7 +24,7 @@ export const Trending =({image,headline})=>{
         <img src={image} alt="" />
         <div>
             <h2>{headline}</h2>
-           
+            <p>published on {date}</p>
         </div>
     </div>
     

@@ -36,7 +36,7 @@ export const Offbeat =()=>{
               <div className="heading"><b>TENDING</b></div>
             {
              trend.map((e)=>{
-                return <Trending image={e.image_url} headline={e.headline} ></Trending>
+                return <Trending image={e.image_url} headline={e.headline} date={e.posted_date}></Trending>
                })
             }
         </div>

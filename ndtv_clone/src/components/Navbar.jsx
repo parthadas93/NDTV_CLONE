@@ -66,8 +66,8 @@ export const Nav=()=>{
                 }
             <button style={{background:"rgb(62,62,62)" ,border:"none",color:"white"}} onClick={()=>dispatch(toggleshow(!hiden))}>{'...'}</button>
             {
-                icontab.map((e)=>
-                   <a href={e.link}><img className="icon" src={e.img} alt="" /></a> 
+                icontab.map((e,i)=>
+                   <a key={i} href={e.link}><img className="icon" src={e.img} alt="" /></a> 
                 )
             }
             
