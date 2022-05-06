@@ -3,23 +3,24 @@ import logo from './logo.svg'
 import './App.css'
 import axios from "axios"
 import {useEffect} from "react"
+import NewsDisplay from "./Components/India/India"
 
 function App() {
-  const [count, setCount] = useState([])
+  // const [count, setCount] = useState([])
 
-  useEffect(()=>{
-  axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=0d5c533").then((res)=>{setCount(res.data.articles)})
-  }, [])
+  // useEffect(()=>{
+  // axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=0d5c533").then((res)=>{setCount(res.data.articles)})
+  // }, [])
   
-  console.log(count)
+  // console.log(count)
   return (
     <div className="App">
-
-      {count.map((e) => {
+       <NewsDisplay />
+      {/* {count.map((e) => {
         return (
           <img src ={`${e.urlToImage}`}  ></img>
         )
-       })}
+       })} */}
      
     </div>
   )

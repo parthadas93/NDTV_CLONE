@@ -1,0 +1,26 @@
+.NewsDisplay{
+    display:flex;
+    /* border:1px solid red; */
+    justify-content: space-between;
+}
+.news1{
+    width: 95%;
+    height: 1970px;
+    /* border:1px solid red; */
+    overflow: hidden;
+    margin-bottom: 20px;
+    /* border:1px solid pink; */
+    
+}
+.NewsDisplay1{
+    width: 25%;
+}
+
+.NewsDisplay2{
+    width:25%;
+}
+/* .news1{
+    width: 70%;
+    border:1px solid red;
+    
+} */
