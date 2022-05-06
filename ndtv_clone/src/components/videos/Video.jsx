@@ -11,7 +11,7 @@ export const Videos = ({ url, des }) => {
         playing={true}
         muted
         autoPlay={"autoplay"}
-        preLoad="auto"
+        preload="auto"
         loop
       />
       <b>{des}</b>

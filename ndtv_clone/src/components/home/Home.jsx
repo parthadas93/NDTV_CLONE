@@ -6,14 +6,11 @@ import { Typography } from "antd";
 import { Card } from "antd";
 import { SingleCard } from "../singleCard/SingleCard";
 const { Meta } = Card;
-
-
-
-
+import { Link } from "react-router-dom";
 import  { useRef} from 'react'
 import { Videos } from "../videos/Video";
 import { ImageDiv } from "../imageDiv/ImageDiv";
-
+import { useParams } from "react-router-dom";
 
 const { Title } = Typography;
 
@@ -41,7 +38,8 @@ export const Home = () => {
   
   useEffect(() => {
     axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=0d5c533e390b465b871030f8f9e94c34").then((res)=>{setBit(res.data.articles)})
-  },[])
+  }, [])
+  const {title} = useParams()
 
 //  console.log(top)
   return (
@@ -61,11 +59,13 @@ export const Home = () => {
             <Title level={4}>Top Stories</Title>
             {data.map((e) => {
               return (
+                <Link to="/:title">
                 <SmallCards
                   key={e.id}
                   image={e.image_url}
                   des={e.headline}
                 ></SmallCards>
+                </Link>
               );
             })}
           </div>
