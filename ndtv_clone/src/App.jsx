@@ -7,7 +7,7 @@ import { Home } from './components/Midnav/home/Home';
 import { LiveTV } from './components/Midnav/LiveTv';
 import {Cities} from "./components/Midnav/Cities";
 import {Covid} from "./components/Midnav/Covid";
-import {India} from "./components/Midnav/India";
+import {India} from "./components/India/India";
 import {Letest} from "./components/Midnav/Latest";
 import {Offbeat} from "./components/Midnav/Offbeat";
 import {Opinion} from "./components/Midnav/Opinion";

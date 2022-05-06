@@ -5,7 +5,7 @@ import { TrendDisplay } from "./IndiaTrend";
 import {Indianews} from "./IndiaNews";
 import {IndiaRightComponent} from "./IndiaRightComponent"
 
-const NewsDisplay = () => {
+export const India = () => {
   
   
   return (
@@ -29,4 +29,3 @@ const NewsDisplay = () => {
   );
 };
 
-export default NewsDisplay;

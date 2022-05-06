@@ -2,6 +2,8 @@
     display:flex;
     /* border:1px solid red; */
     justify-content: space-between;
+    width: 80%;
+    margin: auto;
 }
 .news1{
     width: 95%;
@@ -25,4 +27,5 @@
 }
 .IndiaHeadDisplay{
     text-align:left;
+    margin-left: 250px;
 }
