@@ -18,7 +18,7 @@ export const TrendDisplay =() =>{
 
     return (
         <div className="TrnendDisplay">
-            <h3>TRENDINGS</h3>
+            <h3 className="IndiaTrendHeader">TRENDINGS</h3>
             {trendNews.map((e,i)=>{
                
                 return(

@@ -9,7 +9,7 @@ export const IndiaRightComponent =() =>{
         const trendNews = await axios.get("https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=5e25f249bfa64f288599a8d81ba360dc&pageSize=5")
 
         setTrendNews(trendNews.data.articles)
-        console.log((trendNews.data.articles));
+        // console.log((trendNews.data.articles));
     }
 
     useEffect(() =>{
