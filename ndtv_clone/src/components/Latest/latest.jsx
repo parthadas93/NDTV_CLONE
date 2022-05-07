@@ -15,7 +15,7 @@ export const  Latest=()=> {
             <div className='Heading'>
             
               <div className='small-heading'>
-                <p style={{color:"#465E8B", marginLeft:"120px"}}><span >Home  <BsChevronLeft/><span> Latest News</span></span></p>
+                <p style={{color:"#465E8B", marginLeft:"120px", marginBottom:"10px"}}><span >Home  <BsChevronLeft/><span> Latest News</span></span></p>
               </div>
 
 
