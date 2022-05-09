@@ -15,10 +15,10 @@ export const TrendingNews=()=> {
 
   const getData=async()=>{
 
-    const data= await axios.get("https://newsapi.org/v2/everything?q=bitcoin&apiKey=543e62b5bc9443678e343cb09c03e291") 
+    await axios.get("https://ndtvnews-api.herokuapp.com/general").then((res)=>{setNews(res.data.news[0].articles)})
       
-    const resp=data.data.articles;
-    setNews([...resp])
+    // const resp=data.data.articles;
+    // setNews([...resp])
   }
   return (
     <div className='curr-trend'>
@@ -29,11 +29,11 @@ export const TrendingNews=()=> {
     
     <div className='curr-main-trend'>
      <div className='curr-img-trend'>
-           <img  src={news.urlToImage} />
+           <img  src={news.image_url} />
      </div>
   
      <div className='text-div-trend'> 
-     {news.title}
+     {news.headline}
      </div>
       </div>
         ))
