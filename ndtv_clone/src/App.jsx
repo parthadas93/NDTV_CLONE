@@ -10,7 +10,7 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home></Home>}> </Route>
-        <Route path="/:title" element={<SinglePage></SinglePage>}> </Route>
+        {/* <Route path="/:title" element={<SinglePage></SinglePage>}> </Route> */}
         
       </Routes>
 
