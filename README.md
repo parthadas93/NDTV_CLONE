@@ -6,7 +6,7 @@
 <li>Krunal Ashok Borhade.</li>
 <li>Muskan Gupta.</li>
 </br>
-This blog is about the journy and challenges that we faced and how we solved that problem on those days by using many lools.
+Thise readme is about the journy and challenges that we faced and how we solved that problem on those days by using many lools.
 
 Things uses in building this project…
 <li>HTML (HyperText Markup Language)</li>
