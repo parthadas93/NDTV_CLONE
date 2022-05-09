@@ -9,16 +9,16 @@ export const Trends =()=>{
    
     const [trend,setTrend] =useState([]);
 
-    // useEffect(()=>{
-    // axios.get("https://ndtvnews-api.herokuapp.com/general?category=values(offbeat)").then((res)=>{setCount(res.data.news[0].articles)})
-    // }, []);
-
     useEffect(()=>{
-        axios.get(" https://newsapi.org/v2/top-headlines?country=in&apiKey=bd45453f7cef4f6fb21197c147dcaa38").then((res)=>{setTrend(res.data.articles)})
-        }, [])
+    axios.get("https://ndtvnews-api.herokuapp.com/general?category=values(offbeat)").then((res)=>{setTrend(res.data.news[0].articles)})
+    }, []);
+
+    // useEffect(()=>{
+    //     axios.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=bd45453f7cef4f6fb21197c147dcaa38").then((res)=>{setTrend(res.data.articles)})
+    //     }, [])
     
     // console.log(count)
-    console.log(trend)
+    // console.log(trend)
     return(
         <>
         <div>
@@ -34,7 +34,7 @@ export const Trends =()=>{
               <div className="heading"><b>TENDING</b></div>
             {
              trend.map((e,i)=>{
-                return <div key={i}><p className="rank">{i+1}</p><Trending key={i} image={e.urlToImage} headline={e.title} date={e.publishedAt}></Trending></div>
+                return <div key={i}><p className="rank">{i+1}</p><Trending key={i} image={e.image_url} headline={e.headline} date={e.posted_date}></Trending></div>
                })
             }
         </div>
