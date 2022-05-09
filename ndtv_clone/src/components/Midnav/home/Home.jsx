@@ -37,7 +37,7 @@ export const Home = () => {
   }, [])
   
   useEffect(() => {
-    axios.get("https://ndtvnews-api.herokuapp.com/general").then((res)=>{setBit(res.data.articles)})
+    axios.get("https://ndtvnews-api.herokuapp.com/general").then((res)=>{setBit(res.data.news[0].articles)})
   }, [])
   const {title} = useParams()
 
