@@ -27,7 +27,8 @@ export const Cities = () => {
         `https://ndtvnews-api.herokuapp.com/general?category=values(world)&field=values(headline,url,image_url)`
       );
       const world_data_right = await res.json();
-      setright(world_data_right.data.news[0].articles);
+      console.log("world data",world_data_right )
+      setright(world_data_right.news[0].articles);
     } catch (error) {
       console.log(error);
     }
@@ -108,6 +109,7 @@ export const Cities = () => {
             alt=""
           />
           <div>
+            console.log(rightsidedata)
             {rightsidedata.map((e) => (
               <div id = "right">
                 <img id = "rightimg" src={e.image_url} alt="" />
