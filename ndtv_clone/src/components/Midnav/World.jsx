@@ -25,10 +25,10 @@ export const World = () => {
   const rightside = async () => {
     try {
       const res = await fetch(
-        `https://newsapi.org/v2/everything?q=latest&page=1&pagesize=15&apiKey=2329b008441349cb8234dc46e20c1003`
+        `https://ndtvnews-api.herokuapp.com/general?category=values(world)&page=2&pagesize=3&field=values(headline,description,url,image_url,category,posted_date)`
       );
       const world_data_right = await res.json();
-      setright(world_data_right.articles);
+      setright(world_data_right.news[0].articles);
     } catch (error) {
       console.log(error);
     }
@@ -109,8 +109,8 @@ export const World = () => {
           <div>
             {rightsidedata.map((e) => (
               <div id = "right">
-                <img id = "rightimg" src={e.urlToImage} alt="" />
-                <h4>{e.title}</h4>
+                <img id = "rightimg" src={e.image_url} alt="" />
+                <h4>{e.headline}</h4>
               </div>
             ))}
           </div>

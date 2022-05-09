@@ -109,7 +109,7 @@ export const Cities = () => {
             alt=""
           />
           <div>
-            console.log(rightsidedata)
+       
             {rightsidedata.map((e) => (
               <div id = "right">
                 <img id = "rightimg" src={e.image_url} alt="" />
