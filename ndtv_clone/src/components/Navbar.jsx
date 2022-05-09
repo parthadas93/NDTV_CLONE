@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import {Link} from "react-router-dom"
 import { toggleshow } from "../redux/Action";
+import {BsSmartwatch} from "react-icons/bs"
 import "./Navbar.css"
 
 
@@ -40,16 +41,14 @@ export const Nav=()=>{
             link:"https://www.kooapp.com/profile/ndtv",
             img:"https://www.kooapp.com/assets/2d634360.svg",
         },
-        {
-            link:"",
-            img:"https://cdn-icons.flaticon.com/png/128/2523/premium/2523586.png?token=exp=1651779061~hmac=d63c0e9d315ef5c7ab7497cbb64d5422",
-        },
+        
         {
             link:"",
             img:"https://cdn-icons-png.flaticon.com/128/2645/2645897.png",
         },
 
     ]
+    //IoWatchOutline
     
     return(
         <div className="mainvav">
@@ -69,7 +68,9 @@ export const Nav=()=>{
                 icontab.map((e,i)=>
                    <a key={i} href={e.link}><img className="icon" src={e.img} alt="" /></a> 
                 )
+
             }
+            <BsSmartwatch className="watch_image"></BsSmartwatch>
             
             
         </div>

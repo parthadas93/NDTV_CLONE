@@ -59,13 +59,15 @@ export const Home = () => {
             <Title level={4}>Top Stories</Title>
             {data.map((e) => {
               return (
-                <Link to="/:title">
-                <SmallCards
-                  key={e.id}
-                  image={e.image_url}
-                  des={e.headline}
-                ></SmallCards>
-                </Link>
+                <a href={e.url}>
+
+                  <SmallCards
+                    key={e.id}
+                    image={e.image_url}
+                    des={e.headline}
+                  ></SmallCards>
+                </a>
+                
               );
             })}
           </div>
