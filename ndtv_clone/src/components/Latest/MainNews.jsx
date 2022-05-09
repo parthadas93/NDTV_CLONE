@@ -17,7 +17,7 @@ export const MainNews=()=> {
       
     //     setNews([...resp])
 
-        console.log("rest",news )
+        // console.log("rest",news )
 
   }
   return (
