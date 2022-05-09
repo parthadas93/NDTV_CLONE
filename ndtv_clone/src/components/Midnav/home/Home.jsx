@@ -144,7 +144,9 @@ export const Home = () => {
           <div className="right_main">
           {bit.map((e) => {
             return (
-                <SmallCards image={e.urlToImage} des={e.title}></SmallCards>
+                <SmallCards 
+                image={e.image_url}
+                des={e.headline}></SmallCards>
 
 
 
