@@ -14,9 +14,9 @@ getData()
 
   const getData=async()=>{
 
-    const data= await axios.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=543e62b5bc9443678e343cb09c03e291")
-    const resp=data.data.articles
-     setNews([...resp])
+     await axios.get("https://ndtvnews-api.herokuapp.com/general").then((res)=>{setNews(res.data.news[0].articles)})
+    // const resp=res.data.news[0].articles
+    //  setNews([...resp])
      
     console.log("news",resp)
     
@@ -30,11 +30,11 @@ getData()
   
   <div className='curr-main'>
    <div className='curr-img'>
-         <img  src={news.urlToImage} />
+         <img  src={news.image_url} />
    </div>
 
    <div className='text-div'> 
-   {news.title}
+   {news.headline}
    </div>
     </div>
  
